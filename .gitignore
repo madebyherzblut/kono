@@ -1,3 +1,2 @@
 *.log
-packages/*/tmp/
 node_modules

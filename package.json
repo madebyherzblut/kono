@@ -1,0 +1,15 @@
+{
+  "author": "smartvokat GmbH",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@storybook/react": "^3.4.10",
+    "babel-core": "^6.26.3"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
