@@ -75,9 +75,16 @@ async function copySassFiles() {
 async function build() {
   console.log("Building %s", pkg.name);
   try {
-    // console.log("> Cleaning directories…");
-    // await fs.emptyDir(tempDir);
-    // await fs.emptyDir(outputDir);
+    console.log("> Cleaning directories…");
+    await fs.emptyDir(tempDir);
+    await fs.readdir(inputDir).then(files =>
+      Promise.all(
+        files
+          .map(file => path.join(outputDir, file))
+          .concat(path.join(__dirname, "..", "kono"))
+          .map(file => fs.remove(file))
+      )
+    );
 
     console.log("> Compiling .scss files…");
     await compileSassFiles();
@@ -90,13 +97,6 @@ async function build() {
 
     console.log("> Copy files to dist/");
     await fs.copy(tempDir, outputDir);
-
-    // console.log("> Copy remaining files");
-    // await globby(["package.json", "index.js", "README.md"], {
-    //   base: path.join(__dirname, "..")
-    // }).then(files =>
-    //   Promise.all(files.map(file => fs.copy(file, path.join(outputDir, file))))
-    // );
 
     console.log("Done.");
   } catch (err) {
