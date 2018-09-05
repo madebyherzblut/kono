@@ -1,9 +1,50 @@
+@import "../functions/color";
+@import "../functions/spacing";
+@import "./variables";
+
 .a-btn {
   appearance: none;
+  background-color: #fff;
+  background-image: linear-gradient(180deg, #ffffff 0%, #f3f3f3 100%);
+  border-radius: $button-border-radius;
+  border: $button-border-width solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
   display: inline-block;
+  font-size: 0.9rem;
   overflow: hidden;
+  padding: spacing(extra-tight) spacing(tight);
   text-decoration: none;
   text-overflow: ellipsis;
   white-space: nowrap;
+
+  &:hover,
+  &:active {
+    background-image: none;
+  }
+
+  &:focus {
+    background-image: none;
+    border-color: color(primary);
+    box-shadow: 0 0 0 0.25rem rgba(color(primary), 0.25);
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+@each $intent in $button-intents {
+  .a-btn--#{$intent} {
+    background-color: color($intent, bg);
+    background-image: none;
+    color: color($intent, fg);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+
+    &:hover,
+    &:focus {
+      background-color: color($intent, darker-bg);
+      color: color($intent, darker-fg);
+    }
+  }
 }

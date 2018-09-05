@@ -1,0 +1,8 @@
+@import "../variables/spacing";
+
+@function spacing($size, $map: $spacing) {
+  @if (map-has-key($map, $size)) {
+    @return map-get($map, unquote($size));
+  }
+  @return null;
+}

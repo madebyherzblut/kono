@@ -4,7 +4,7 @@ configure(function() {
   const ctx = require.context(
     "../packages",
     true,
-    /^((?!node_modules).)*\.story\.js$/
+    /^((?!node_modules).)*\.story\.jsx$/
   );
 
   ctx.keys().forEach(ctx);

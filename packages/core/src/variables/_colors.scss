@@ -1,0 +1,66 @@
+// ---
+$white: #fff;
+$black: #000;
+
+// Primary
+$blue1: #0f44cc;
+$blue2: #114de5;
+$blue3: #1355ff;
+$blue4: #4579ff;
+$blue5: #789eff;
+
+// Success
+$green1: #0c6938;
+$green2: #0f8145;
+$green3: #129c53;
+$green4: #15b561;
+$green5: #17cf6f;
+
+// Warning
+$orange1: #b87900;
+$orange2: #d08900;
+$orange3: #eb9b00;
+$orange4: #ffa800;
+$orange5: #ffca64;
+
+// Danger
+$red1: #b00000;
+$red2: #ca0000;
+$red3: #e30000;
+$red4: #fc0000;
+$red5: #ff5c5c;
+
+$colors: (
+  primary: (
+    bg: $blue3,
+    fg: $white,
+    lighter-bg: $blue5,
+    lighter-fg: $white,
+    darker-bg: $blue1,
+    darker-fg: $white
+  ),
+  success: (
+    bg: $green3,
+    fg: $white,
+    lighter-bg: $green5,
+    lighter-fg: $white,
+    darker-bg: $green1,
+    darker-fg: $white
+  ),
+  warning: (
+    bg: $orange3,
+    fg: $white,
+    lighter-bg: $orange5,
+    lighter-fg: $white,
+    darker-bg: $orange1,
+    darker-fg: $white
+  ),
+  danger: (
+    bg: $red3,
+    fg: $white,
+    lighter-bg: $red5,
+    lighter-fg: $white,
+    darker-bg: $red1,
+    darker-fg: $white
+  )
+) !default;
