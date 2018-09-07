@@ -34,6 +34,12 @@
   }
 }
 
+.a-btn--block {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
 @each $intent in $button-intents {
   .a-btn--#{$intent} {
     background-color: color($intent, bg);
