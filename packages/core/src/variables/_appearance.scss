@@ -1,2 +1,12 @@
+@import "./colors";
+@import "../functions/color";
+
+// Borders
 $border-radius: 0.25rem;
 $border-width: 1px;
+
+// Links
+$link-color: $color-base-text;
+$link-decoration: underline;
+$link-hover-color: color(primary);
+$link-hover-decoration: underline;
