@@ -1,5 +1,6 @@
 import { configure } from "@storybook/react";
 
+import "./storybook.css";
 configure(function() {
   const ctx = require.context(
     "../packages",
