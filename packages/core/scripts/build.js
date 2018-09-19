@@ -95,7 +95,7 @@ async function build() {
     console.log("> Copy source files…");
     await copySassFiles();
 
-    console.log("> Copy files to dist/");
+    console.log("> Copy files to output directory");
     await fs.copy(tempDir, outputDir);
 
     console.log("Done.");
