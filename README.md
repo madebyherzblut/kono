@@ -1,4 +1,4 @@
-# kono
+![kono](/.github/banner.png?raw=true)
 
 kono ist a lightweight, customizable, and accessible UI framework for websites and web applications.
 
