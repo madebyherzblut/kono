@@ -19,6 +19,7 @@
     "react-dom": "^16.7.0"
   },
   "scripts": {
+    "clean": "node ./scripts/clean.js",
     "build": "node ./scripts/build.js",
     "build:watch": "node ./scripts/watch.js"
   }

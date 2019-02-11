@@ -74,18 +74,8 @@ async function copySassFiles() {
 
 async function build() {
   console.log("Building %s", pkg.name);
-  try {
-    console.log("> Cleaning directories…");
-    await fs.emptyDir(tempDir);
-    await fs.readdir(inputDir).then(files =>
-      Promise.all(
-        files
-          .map(file => path.join(outputDir, file))
-          .concat(path.join(__dirname, "..", "kono"))
-          .map(file => fs.remove(file))
-      )
-    );
 
+  try {
     console.log("> Compiling .scss files…");
     await compileSassFiles();
 
