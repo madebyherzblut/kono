@@ -1,0 +1,6 @@
+@import "../functions/math";
+@import "../variables/typography";
+
+@function modular-scale($ms) {
+  @return $font-size-base * pow($font-size-ratio, $ms);
+}
