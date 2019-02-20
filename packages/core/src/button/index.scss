@@ -2,7 +2,7 @@
 @import "../functions/spacing";
 @import "./variables";
 
-.a-btn {
+.btn {
   appearance: none;
   background-color: #fff;
   background-image: linear-gradient(180deg, #ffffff 0%, #f3f3f3 100%);
@@ -34,14 +34,14 @@
   }
 }
 
-.a-btn--block {
+.btn--block {
   display: block;
   text-align: center;
   width: 100%;
 }
 
 @each $intent in $button-intents {
-  .a-btn--#{$intent} {
+  .btn--#{$intent} {
     background-color: color($intent, bg);
     background-image: none;
     color: color($intent, fg);
