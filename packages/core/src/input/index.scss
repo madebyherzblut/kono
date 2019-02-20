@@ -1,0 +1,43 @@
+@import "variables";
+@import "../functions/color";
+
+.input {
+  appearance: none;
+  padding: $input-padding;
+  border-radius: $input-border-radius;
+  border: $input-border-width solid color(border, default);
+  box-shadow: inset 0 0.1rem 0 rgba(0, 0, 0, 0.05);
+
+  &::placeholder {
+    color: color(muted, fg);
+  }
+
+  &[type="range"] {
+    border: none;
+    box-shadow: none;
+  }
+
+  &[type="checkbox"] {
+    appearance: checkbox;
+  }
+
+  &[type="radio"] {
+    appearance: radio;
+  }
+
+  &:focus {
+    border-color: color(primary, bg);
+    box-shadow: 0 0 0 0.2rem rgba(color(primary, bg), 0.2);
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: color(muted, bg);
+    color: color(muted, fg);
+  }
+}
+
+.input--block {
+  display: block;
+  width: 100%;
+}
