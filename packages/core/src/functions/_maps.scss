@@ -1,0 +1,18 @@
+@function map-merge-deep($destination, $source) {
+  $result: $destination;
+
+  @each $key, $value in $source {
+    @if type-of($value) == "map" and type-of(map-get($result, $key)) == "map" {
+      $value: map-merge-deep(map-get($result, $key), $value);
+    }
+
+    $result: map-merge(
+      $result,
+      (
+        $key: $value
+      )
+    );
+  }
+
+  @return $result;
+}
