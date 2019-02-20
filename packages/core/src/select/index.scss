@@ -1,0 +1,46 @@
+@import "variables";
+@import "../functions/color";
+
+.select {
+  appearance: none;
+  padding: $select-padding;
+  border-radius: $select-border-radius;
+  border: $select-border-width solid color(border, default);
+
+  &:focus {
+    border-color: color(primary, bg);
+    box-shadow: 0 0 0 0.2rem rgba(color(primary, bg), 0.2);
+    outline: none;
+  }
+
+  &:not([multiple]):not([size]):disabled,
+  &:disabled {
+    background-color: color(muted, bg);
+    color: color(muted, fg);
+  }
+
+  &[size],
+  &[multiple] {
+    height: auto;
+    r .select__option {
+      padding: $select-padding;
+    }
+  }
+
+  &:not([multiple]):not([size]) {
+    background-position-x: right $select-icon-padding;
+    background-position-y: center;
+    background-image: url($select-icon);
+    background-repeat: no-repeat;
+    background-size: $select-icon-width $select-icon-width;
+    padding-right: $select-icon-width + $select-icon-padding;
+  }
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.select__option {
+  color: color(text, default);
+}
