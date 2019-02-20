@@ -2,6 +2,20 @@
 $white: #fff;
 $black: #000;
 
+// Neutrals
+$neutral1: #102a43;
+$neutral2: #243b53;
+$neutral3: #334e68;
+$neutral4: #486581;
+$neutral5: #627d98;
+
+// Grays
+$gray1: #829ab1;
+$gray2: #9fb3c8;
+$gray3: #bcccdc;
+$gray4: #d9e2ec;
+$gray5: #f0f4f8;
+
 // Primary
 $blue1: #0f44cc;
 $blue2: #114de5;
@@ -31,10 +45,15 @@ $red4: #fc0000;
 $red5: #ff5c5c;
 
 // Colors
-$color-base-text: #212529;
 $color-base-bg: #fff;
 
 $colors: (
+  text: (
+    default: $neutral1
+  ),
+  border: (
+    default: $gray3
+  ),
   primary: (
     bg: $blue3,
     fg: $white,
@@ -66,5 +85,9 @@ $colors: (
     lighter-fg: $white,
     darker-bg: $red1,
     darker-fg: $white
+  ),
+  muted: (
+    bg: $gray5,
+    fg: $neutral1
   )
 ) !default;
