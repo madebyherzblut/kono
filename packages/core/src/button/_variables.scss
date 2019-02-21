@@ -1,5 +1,7 @@
 @import "../variables/appearance";
+@import "../variables/breakpoints";
 
 $button-border-width: $border-width !default;
 $button-border-radius: $border-radius !default;
 $button-intents: ("primary", "success", "warning", "danger");
+$button-breakpoints: $breakpoints !default;

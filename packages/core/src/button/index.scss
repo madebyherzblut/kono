@@ -1,5 +1,6 @@
 @import "../functions/color";
 @import "../functions/spacing";
+@import "../mixins/breakpoints";
 @import "./variables";
 
 .btn {
@@ -39,6 +40,32 @@
   display: block;
   text-align: center;
   width: 100%;
+}
+
+@each $breakpoint, $width in $button-breakpoints {
+  @include breakpoint($width) {
+    .btn--#{$breakpoint}-block {
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+.btn--inline {
+  display: inline-block;
+  text-align: inherit;
+  width: auto;
+}
+
+@each $breakpoint, $width in $button-breakpoints {
+  @include breakpoint($width) {
+    .btn--#{$breakpoint}-inline {
+      display: inline-block;
+      text-align: inherit;
+      width: auto;
+    }
+  }
 }
 
 @each $intent in $button-intents {
