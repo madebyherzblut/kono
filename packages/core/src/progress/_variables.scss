@@ -1,0 +1,13 @@
+@import "../variables/appearance";
+@import "../variables/colors";
+@import "../functions/color";
+
+$progress-border-radius: $border-radius !default;
+$progress-border-width: 0;
+
+$progress-colors: (
+  default: (
+    bg: color(muted, bg),
+    border: color(muted, fg)
+  )
+);
