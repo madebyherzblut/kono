@@ -3,5 +3,5 @@
 
 $button-border-width: $border-width !default;
 $button-border-radius: $border-radius !default;
-$button-intents: ("primary", "success", "warning", "danger");
+$button-intents: ("primary", "success", "warning", "danger") !default;
 $button-breakpoints: $breakpoints !default;
