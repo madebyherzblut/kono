@@ -84,31 +84,46 @@
       justify-content: flex-start;
     }
 
+    // TODO: This does not support ltr layouts
+    .grid__col#{$name}#{$separator}start {
+      text-align: left;
+    }
+
     .grid__row#{$name}#{$separator}center {
       justify-content: center;
+    }
+
+    // TODO: This does not support ltr layouts
+    .grid__col#{$name}#{$separator}center {
+      text-align: center;
     }
 
     .grid__row#{$name}#{$separator}end {
       justify-content: flex-end;
     }
 
-    .grid__col#{$name}#{$separator}top {
+    // TODO: This does not support ltr layouts
+    .grid__col#{$name}#{$separator}end {
+      text-align: right;
+    }
+
+    .grid__row#{$name}#{$separator}top {
       align-items: flex-start;
     }
 
-    .grid__col#{$name}#{$separator}middle {
+    .grid__row#{$name}#{$separator}middle {
       align-items: center;
     }
 
-    .grid__col#{$name}#{$separator}bottom {
+    .grid__row#{$name}#{$separator}bottom {
       align-items: flex-end;
     }
 
-    .grid__col#{$name}#{$separator}around {
+    .grid__row#{$name}#{$separator}around {
       justify-content: space-around;
     }
 
-    .grid__col#{$name}#{$separator}between {
+    .grid__row#{$name}#{$separator}between {
       justify-content: space-between;
     }
 
