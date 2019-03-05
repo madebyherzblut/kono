@@ -40,3 +40,9 @@
     display: none;
   }
 }
+
+@each $intent in $select-intents {
+  .select--#{$intent} {
+    border-color: color($intent, bg);
+  }
+}
