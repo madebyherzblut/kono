@@ -37,6 +37,12 @@
   }
 }
 
+@each $intent in $input-intents {
+  .input--#{$intent} {
+    border-color: color($intent, bg);
+  }
+}
+
 .input--block {
   display: block;
   width: 100%;
