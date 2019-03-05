@@ -1,4 +1,7 @@
+@import "../functions/color";
 @import "../functions/spacing";
+@import "../variables/typography";
+@import "variables";
 
 .form-control {
 }
@@ -13,4 +16,16 @@
 
 .form-control__input {
   width: 100%;
+}
+
+.form-control__text {
+  margin-top: spacing(tight);
+  font-size: $font-size-sm;
+  color: color(muted, fg);
+}
+
+@each $intent in $form-control-text-intents {
+  .form-control__text--#{$intent} {
+    color: color($intent, bg);
+  }
 }
