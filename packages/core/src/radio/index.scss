@@ -1,0 +1,14 @@
+@import "variables";
+
+.radio {
+  padding-left: $radio-padding-start;
+  display: block;
+}
+
+.radio__input {
+  margin-left: -$radio-padding-start;
+}
+
+.radio + .radio {
+  margin-top: spacing(tight);
+}
