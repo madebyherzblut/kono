@@ -22,14 +22,14 @@
   &[size],
   &[multiple] {
     height: auto;
+
     r .select__option {
       padding: $select-padding;
     }
   }
 
   &:not([multiple]):not([size]) {
-    background-position-x: right $select-icon-padding;
-    background-position-y: center;
+    background-position: right $select-icon-padding center;
     background-image: url($select-icon);
     background-repeat: no-repeat;
     background-size: $select-icon-width $select-icon-width;
