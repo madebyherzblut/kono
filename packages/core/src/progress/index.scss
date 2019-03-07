@@ -2,7 +2,8 @@
 @import "../functions/maps";
 
 // Credit: https://css-tricks.com/html5-progress-element/
-.progress {
+.progress,
+.progress[value] {
   appearance: none;
   background-color: rgb(220, 222, 252);
   border: 0;
@@ -14,11 +15,14 @@
 
   &::-webkit-progress-bar {
     // background-color: map-get-deep($progress-colors, default, bg);
+    background-color: rgb(220, 222, 252);
     border-radius: $border-radius;
+    box-shadow: none;
   }
 
   &::-webkit-progress-value {
     // background-color: map-get-deep($progress-colors, default, bg);
+    background-color: #414df3;
     border-radius: $border-radius;
   }
 
