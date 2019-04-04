@@ -8,6 +8,7 @@ $progress-border-width: 0;
 $progress-colors: (
   default: (
     bg: color(muted, bg),
-    border: color(muted, fg)
+    border: color(muted, fg),
+    value: color(primary, bg)
   )
 );

@@ -15,8 +15,8 @@
 
   &:not([multiple]):not([size]):disabled,
   &:disabled {
-    background-color: color(muted, bg);
-    color: color(muted, fg);
+    background-color: color(muted, lighter-bg);
+    color: color(muted, lighter-fg);
   }
 
   &[size],

@@ -87,7 +87,11 @@ $colors: (
     darker-fg: $white
   ),
   muted: (
-    bg: $gray5,
-    fg: $neutral5
+    bg: $gray3,
+    fg: $neutral3,
+    lighter-bg: $gray5,
+    lighter-fg: $neutral5,
+    darker-bg: $gray1,
+    darker-fg: $neutral1
   )
 ) !default;

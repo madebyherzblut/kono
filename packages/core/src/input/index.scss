@@ -9,7 +9,7 @@
   box-shadow: inset 0 0.1rem 0 rgba(0, 0, 0, 0.05);
 
   &::placeholder {
-    color: color(muted, fg);
+    color: color(muted, lighter-fg);
   }
 
   &[type="range"] {
@@ -32,8 +32,8 @@
   }
 
   &:disabled {
-    background-color: color(muted, bg);
-    color: color(muted, fg);
+    background-color: color(muted, lighter-bg);
+    color: color(muted, lighter-fg);
   }
 }
 

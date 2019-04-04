@@ -21,11 +21,11 @@
 .form-control__text {
   margin-top: spacing(tight);
   font-size: $font-size-sm;
-  color: color(muted, fg);
+  color: color(muted, lighter-fg);
 }
 
 @each $intent in $form-control-text-intents {
   .form-control__text--#{$intent} {
-    color: color($intent, bg);
+    color: color($intent, lighter-bg);
   }
 }

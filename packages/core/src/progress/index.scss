@@ -5,7 +5,7 @@
 .progress,
 .progress[value] {
   appearance: none;
-  background-color: rgb(220, 222, 252);
+  background-color: map-get-deep($progress-colors, default, bg);
   border: 0;
   border-radius: $progress-border-radius;
   color: rgb(220, 222, 252);
@@ -15,19 +15,19 @@
 
   &::-webkit-progress-bar {
     // background-color: map-get-deep($progress-colors, default, bg);
-    background-color: rgb(220, 222, 252);
+    background-color: map-get-deep($progress-colors, default, bg);
     border-radius: $border-radius;
     box-shadow: none;
   }
 
   &::-webkit-progress-value {
     // background-color: map-get-deep($progress-colors, default, bg);
-    background-color: #414df3;
+    background-color: map-get-deep($progress-colors, default, value);
     border-radius: $border-radius;
   }
 
   &::-moz-progress-bar {
-    background-color: #414df3;
+    background-color: map-get-deep($progress-colors, default, value);
     border-radius: $border-radius;
   }
 
