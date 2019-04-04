@@ -18,6 +18,10 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 
+  @if $button-font-family != null {
+    font-family: $button-font-family;
+  }
+
   &:hover,
   &:active {
     background-image: none;
