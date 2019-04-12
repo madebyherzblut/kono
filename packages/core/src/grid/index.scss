@@ -6,6 +6,7 @@
   margin-left: auto;
   padding-right: $grid-outer-margin;
   padding-left: $grid-outer-margin;
+  flex: 1; // Fixes IE11
 }
 
 .grid--paddingless {
