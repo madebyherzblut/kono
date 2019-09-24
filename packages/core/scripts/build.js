@@ -1,10 +1,10 @@
 "use strict";
 
-const pkg = require("../package.json");
-const globby = require("globby");
-const sass = require("node-sass");
-const path = require("path");
 const fs = require("fs-extra");
+const globby = require("globby");
+const path = require("path");
+const pkg = require("../package.json");
+const sass = require("sass");
 const util = require("util");
 
 const readFile = util.promisify(fs.readFile);
