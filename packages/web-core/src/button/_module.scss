@@ -1,0 +1,12 @@
+@mixin base() {
+  cursor: pointer;
+}
+
+@mixin disabled() {
+  cursor: not-allowed;
+}
+
+@mixin fill() {
+  display: flex;
+  width: 100%;
+}

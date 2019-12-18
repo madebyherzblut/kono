@@ -1,0 +1,14 @@
+@use "module" as button;
+
+.btn {
+  @include button.base();
+
+  &:disabled,
+  &--disabled {
+    @include button.disabled();
+  }
+}
+
+.btn--fill {
+  @include button.fill();
+}

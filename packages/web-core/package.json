@@ -1,0 +1,10 @@
+{
+  "name": "@kono/web-core",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "smartvokat GmbH",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "sass": "^1.23.7"
+  }
+}
