@@ -1,7 +1,8 @@
-@use "module" as button;
+@use "mixins" as button;
 
 .btn {
   @include button.base();
+  @include button.base-style();
 
   &:disabled,
   &--disabled {

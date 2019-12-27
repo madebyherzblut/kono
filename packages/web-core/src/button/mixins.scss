@@ -1,0 +1,22 @@
+@mixin base() {
+  appearance: none;
+  user-select: none;
+  text-decoration: none;
+}
+
+@mixin base-style() {
+  border: 1px solid #000;
+  background-color: #fff;
+  color: inherit;
+  padding: 0;
+}
+
+@mixin disabled() {
+  cursor: not-allowed;
+}
+
+@mixin fill() {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
